@@ -1,5 +1,6 @@
 import Description from "@/components/main/Description";
 import Title from "@/components/main/Title";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,6 +8,8 @@ export default function Home() {
       <section className="card">
         <Title title="Next.js 첫 번째 페이지" />
         <Description description="Next.js 복습" />
+
+        <Link href="/about">About 페이지 이동</Link>
       </section>
     </main>
   );
