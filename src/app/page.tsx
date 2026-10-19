@@ -1,3 +1,4 @@
+import Counter from "@/components/Counter";
 import Description from "@/components/main/Description";
 import Title from "@/components/main/Title";
 import Link from "next/link";
@@ -10,6 +11,7 @@ export default function Home() {
         <Description description="Next.js 복습" />
 
         <Link href="/about">About 페이지 이동</Link>
+        <Counter />
       </section>
     </main>
   );
