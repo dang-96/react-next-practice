@@ -5,6 +5,7 @@ import Dropdown from "@/components/Dropdown";
 import Description from "@/components/main/Description";
 import Title from "@/components/main/Title";
 import Modal from "@/components/Modal";
+import ProductList from "@/components/ProductList";
 import Search from "@/components/Search";
 import Link from "next/link";
 import { useState } from "react";
@@ -37,6 +38,7 @@ export default function Home() {
             }}
           />
         )}
+        <ProductList />
       </section>
     </main>
   );
