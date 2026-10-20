@@ -1,6 +1,7 @@
 import Counter from "@/components/Counter";
 import Description from "@/components/main/Description";
 import Title from "@/components/main/Title";
+import Search from "@/components/Search";
 import Link from "next/link";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
 
         <Link href="/about">About 페이지 이동</Link>
         <Counter />
+        <Search />
       </section>
     </main>
   );
