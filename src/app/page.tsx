@@ -1,7 +1,6 @@
 "use client";
 
 import CartHeader from "@/components/CartHeader";
-import CartList from "@/components/CartList";
 import Counter from "@/components/Counter";
 import Dropdown from "@/components/Dropdown";
 import LikeButton from "@/components/LikeButton";
@@ -51,7 +50,6 @@ export default function Home() {
         <LikeButton /> */}
         <CartHeader />
         <ProductListCart />
-        <CartList />
       </section>
     </main>
   );

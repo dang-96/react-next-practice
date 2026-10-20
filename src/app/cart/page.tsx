@@ -1,3 +1,6 @@
+"use client";
+
+import CartHeader from "@/components/CartHeader";
 import { useCartStore } from "@/store/useCartStore";
 
 export default function CartList() {
@@ -7,6 +10,7 @@ export default function CartList() {
 
   return (
     <section>
+      <CartHeader />
       <h2>장바구니</h2>
 
       {cartItems.length === 0 ? (
