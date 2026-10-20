@@ -1,13 +1,18 @@
 "use client";
 
+import CartHeader from "@/components/CartHeader";
+import CartList from "@/components/CartList";
 import Counter from "@/components/Counter";
 import Dropdown from "@/components/Dropdown";
+import LikeButton from "@/components/LikeButton";
+import LikeCount from "@/components/LikeCount";
 import Description from "@/components/main/Description";
 import Title from "@/components/main/Title";
 import Modal from "@/components/Modal";
 import PostList from "@/components/PostList";
 import PostListQuery from "@/components/PostListQuery";
 import ProductList from "@/components/ProductList";
+import ProductListCart from "@/components/ProductListCart";
 import Search from "@/components/Search";
 import Link from "next/link";
 import { useState } from "react";
@@ -41,7 +46,12 @@ export default function Home() {
           />
         )}
         <ProductList /> */}
-        <PostListQuery />
+        {/* <PostListQuery /> */}
+        {/* <LikeCount />
+        <LikeButton /> */}
+        <CartHeader />
+        <ProductListCart />
+        <CartList />
       </section>
     </main>
   );
