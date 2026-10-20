@@ -1,6 +1,7 @@
 "use client";
 
 import { useCartStore } from "@/store/useCartStore";
+import Link from "next/link";
 
 export default function CartHeader() {
   const cartItems = useCartStore((state) => state.cartItems);
@@ -12,7 +13,9 @@ export default function CartHeader() {
 
   return (
     <header>
-      <p>장바구니 ({totalCount})</p>
+      <Link href="/">상품 목록</Link>
+      {" | "}
+      <Link href="/cart">장바구니 ({totalCount})</Link>
     </header>
   );
 }
