@@ -1,11 +1,17 @@
+"use client";
+
 import Counter from "@/components/Counter";
 import Dropdown from "@/components/Dropdown";
 import Description from "@/components/main/Description";
 import Title from "@/components/main/Title";
+import Modal from "@/components/Modal";
 import Search from "@/components/Search";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <main className="main">
       <section className="card">
@@ -16,6 +22,21 @@ export default function Home() {
         <Counter />
         <Search />
         <Dropdown />
+        <button
+          type="button"
+          onClick={() => {
+            setIsModalOpen(true);
+          }}
+        >
+          모달 열기
+        </button>
+        {isModalOpen && (
+          <Modal
+            onClose={() => {
+              setIsModalOpen(false);
+            }}
+          />
+        )}
       </section>
     </main>
   );
