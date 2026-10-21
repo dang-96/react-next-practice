@@ -1,5 +1,6 @@
 "use client";
 
+import AdvancedSignupForm from "@/components/AdvancedSignupForm";
 import CartHeader from "@/components/CartHeader";
 import Counter from "@/components/Counter";
 import Dropdown from "@/components/Dropdown";
@@ -13,6 +14,7 @@ import PostListQuery from "@/components/PostListQuery";
 import ProductList from "@/components/ProductList";
 import ProductListCart from "@/components/ProductListCart";
 import Search from "@/components/Search";
+import SignupForm from "@/components/SignUpform";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -43,13 +45,14 @@ export default function Home() {
               setIsModalOpen(false);
             }}
           />
-        )}
-        <ProductList /> */}
+        )} */}
+        <ProductList />
         {/* <PostListQuery /> */}
         {/* <LikeCount />
         <LikeButton /> */}
-        <CartHeader />
-        <ProductListCart />
+        {/* <CartHeader />
+				<ProductListCart /> */}
+        {/* <AdvancedSignupForm /> */}
       </section>
     </main>
   );
