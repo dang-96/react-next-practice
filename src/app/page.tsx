@@ -13,6 +13,7 @@ import PostListQuery from "@/components/PostListQuery";
 import ProductList from "@/components/ProductList";
 import ProductListCart from "@/components/ProductListCart";
 import Search from "@/components/Search";
+import SignupForm from "@/components/SignUpform";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -48,8 +49,9 @@ export default function Home() {
         {/* <PostListQuery /> */}
         {/* <LikeCount />
         <LikeButton /> */}
-        <CartHeader />
-        <ProductListCart />
+        {/* <CartHeader />
+				<ProductListCart /> */}
+        <SignupForm />
       </section>
     </main>
   );
