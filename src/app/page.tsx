@@ -1,5 +1,6 @@
 "use client";
 
+import AdvancedSignupForm from "@/components/AdvancedSignupForm";
 import CartHeader from "@/components/CartHeader";
 import Counter from "@/components/Counter";
 import Dropdown from "@/components/Dropdown";
@@ -51,7 +52,7 @@ export default function Home() {
         <LikeButton /> */}
         {/* <CartHeader />
 				<ProductListCart /> */}
-        <SignupForm />
+        <AdvancedSignupForm />
       </section>
     </main>
   );
