@@ -45,14 +45,14 @@ export default function Home() {
               setIsModalOpen(false);
             }}
           />
-        )}
-        <ProductList /> */}
+        )} */}
+        <ProductList />
         {/* <PostListQuery /> */}
         {/* <LikeCount />
         <LikeButton /> */}
         {/* <CartHeader />
 				<ProductListCart /> */}
-        <AdvancedSignupForm />
+        {/* <AdvancedSignupForm /> */}
       </section>
     </main>
   );
